@@ -1,4 +1,0 @@
-growup-personal
-===============
-
-Growup project

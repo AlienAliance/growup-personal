@@ -1,40 +1,34 @@
 package com.growup.time.manager.entity;
 
 public class User {
-	private Long id;
-	private String nickName;	
-	private String email;
-	private String passcode;
-	private UserInfo userInfo = null;
+	private long id;
+	private String login;
+	private String password;
+	private int privacyStatus;
 	
-	public Long getId() {
+	
+	public long getId() {
 		return id;
 	}
-	public void setId(Long id) {
+	public void setId(long id) {
 		this.id = id;
 	}
-	public String getNickName() {
-		return nickName;
+	public String getLogin() {
+		return login;
 	}
-	public void setNickName(String nickName) {
-		this.nickName = nickName;
+	public void setLogin(String login) {
+		this.login = login;
 	}
-	public String getEmail() {
-		return email;
+	public String getPassword() {
+		return password;
 	}
-	public void setEmail(String email) {
-		this.email = email;
+	public void setPassword(String password) {
+		this.password = password;
 	}
-	public String getPasscode() {
-		return passcode;
+	public int getPrivacyStatus() {
+		return privacyStatus;
 	}
-	public void setPasscode(String passcode) {
-		this.passcode = passcode;
+	public void setPrivacyStatus(int privacyStatus) {
+		this.privacyStatus = privacyStatus;
 	}
-	public UserInfo getUserInfo() {
-		return userInfo;
-	}
-	public void setUserInfo(UserInfo userInfo) {
-		this.userInfo = userInfo;
-	}	
 }

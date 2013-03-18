@@ -1,9 +1,6 @@
 package com.personal.ui.dispatcher;
 
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.util.Properties;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -16,10 +13,8 @@ public class DispatcherServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 7897242594515884762L;
 
-	private boolean initJdbcConfig;
-
 	private void processRequest(HttpServletRequest request,
-			HttpServletResponse response) throws IOException {		
+		HttpServletResponse response) throws IOException {	
 		JSONObject jsonResponse = new JSONObject();
 		try {
 			jsonResponse.put("path",getServletContext().getRealPath(getInitParameter("init-config")));

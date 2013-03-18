@@ -7,7 +7,6 @@
   <packaging>pom</packaging>
   <name>Growup Social Network</name>
   <modules>
-      <module>growup-base</module>
       <module>growup-time-manager</module>
       <module>growup-ui</module>    
   </modules>
