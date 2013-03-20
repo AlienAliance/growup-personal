@@ -1,6 +1,7 @@
 package com.growup.time.manager.entity;
 
 public class User {
+	
 	private long id;
 	private String login;
 	private String password;

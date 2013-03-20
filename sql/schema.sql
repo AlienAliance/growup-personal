@@ -33,7 +33,7 @@ create table t_assignment (
 	CONSTRAINT t_user FOREIGN KEY (user_id) REFERENCES u_auth (id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
- create table t_daytime (
+ create table t_daytime_settings (
 	id bigint not null auto_increment primary key,
 	user_id bigint not null,
 	daytime bigint not null default 28800000,
@@ -41,7 +41,7 @@ create table t_assignment (
 	CONSTRAINT t_daytime_user FOREIGN KEY (user_id) REFERENCES u_auth (id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 
-create table t_user_category (
+create table t_assignment_group (
 	id bigint not null auto_increment primary key,
 	user_id bigint not null,
 	title varchar(100) not null,
